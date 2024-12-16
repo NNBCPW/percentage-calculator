@@ -1,7 +1,7 @@
 import streamlit as st
 
 def main():
-    st.title("Percentage to Inches calc ")
+    st.title("Percentage Inches Calculator")
 
     st.write("### Enter Your Input")
     length = st.number_input("Enter the Length", min_value=0.0, step=0.1)
@@ -13,11 +13,11 @@ def main():
         st.write("### Result")
         st.write(f"For {percentage}% and length {length}, the total in inches is: **{result:.4f} inches**")
 
+    st.write("---")
+    st.write("Created by: NN")
+    st.markdown(
+        "For support, please [email me](mailto:nicholas.nabholz@bexar.org?subject=Support%20for%20Percentage%20to%20Length%20and%20Inches%20Calculator)."
+    )
+
 if __name__ == "__main__":
     main()
-# Add the footer
-add_created_by(
-    email_address="nicholas.nabholz@bexar.org",
-    app_name="Percent to Inches",
-    author_name="NN"
-)
